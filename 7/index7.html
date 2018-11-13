@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+			}
+			
+			.div1 {
+				height: auto;
+				min-height: 50px;
+				width: 400px;
+				border: green solid 5px;
+			/*	border-radius: 15px;*/
+				font-size: 2em;
+				overflow: hidden;
+			}
+			
+			.div1 a {
+				text-decoration: none;
+			}
+		</style>
+		<script type="text/javascript">
+			function createA() {
+				var para = document.createElement("a");
+				var node = document.createTextNode("出自<老子-道德经>");
+				para.appendChild(node);
+				para.setAttribute("href", "#");
+				Element = document.getElementById("div1");
+				Element.appendChild(para);
+				para.style.color = 'yellow';
+				para.style.display = "block";
+				para.style.backgroundColor = 'red';
+			}
+
+			function deleteP() {
+				var allp = document.getElementsByTagName("p");
+				while(allp.length - 1 >= 0) {
+					allp[0].remove();
+				}
+			}
+
+			function deleteA() {
+				var alla = document.getElementsByTagName("a");
+				while(alla.length - 1 >= 0) {
+					alla[0].remove();
+				}
+			}
+
+			function changecolor() {
+				var alldiv1 = document.getElementById("div1");
+				var childs = alldiv1.children;
+				for(var i = childs.length - 1; i >= 0; i--) {
+					childs[i].style.backgroundColor = "fuchsia";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="div1" id="div1">
+			<p>水利万物而不争</p>
+			<p>以其不争</p>
+			<p>故天下莫能与之争</p>
+
+		</div>
+		<div class="div2"> <button onclick="createA()">出处<tton>
+			<button onclick="deleteP()">删除所有P元素<tton>
+			<button onclick="deleteA()">删除所有A元素<tton>
+			<button onclick="changecolor()">改变背景颜色<tton>
+		</div>
+
+	</body>
+
+<ml>
+
