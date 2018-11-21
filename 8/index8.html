@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		姓名
+		<td>
+			<input type="text" name="b" onmouseover="style.color='red'" onmouseout="style.color='blue'">
+		</td>
+		性别
+		<td>
+
+			<select name="a">
+				<option value="男">男</option>
+				<option value="女">女</option>
+			</select>
+		</td>
+		<td><input type="button" name="Submit2" value="添加" onclick="addRow()"></td>
+		<table id="testTbl" border=1 bgcolor="dodgerblue" height="30px" width="400px">
+			<tr>
+				<td>编号</td>
+				<td>姓名</td>
+				<td>性别</td>
+				<td>操作</td>
+			</tr>
+		</table>
+
+		<script>
+			function addRow() {
+				var newTr = testTbl.insertRow();
+				var newTd0 = newTr.insertCell();
+				var newTd1 = newTr.insertCell();
+				var newTd2 = newTr.insertCell();
+				var newTd3 = newTr.insertCell();
+				newTd0.innerText = num;
+				num = num + 1;
+				newTd1.innerText = document.all("b").value;
+				newTd2.innerText = document.all("a").options[document.all("a").selectedIndex].text;
+				newTd3.innerHTML = '<input type="button" name="del" value="删除" onclick="del(this)">';
+			}
+			var num = 1;
+
+			function del(o) {
+				var t = document.getElementById('testTbl');
+				t.deleteRow(o.parentNode.parentNode.rowIndex)
+			}
+		</script>
+
+	</body>
+
+</html>
