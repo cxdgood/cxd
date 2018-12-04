@@ -1,0 +1,126 @@
+body {
+	width: 960px;
+	height: auto;
+}
+
+#a {
+	width: 960px;
+}
+
+.a1 {
+	width: 500px;
+	height: 200px;
+	margin-left: 50px;
+}
+
+.a2 {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	left: 700px;
+	top: -150px;
+}
+
+.b {
+	width: 960px;
+	position: relative;
+	top: -250px;
+}
+
+.p {
+	width: 960px;
+	height: auto;
+	position: relative;
+	top: -120px;
+}
+
+.p1 {
+	width: 220px;
+	height: 300px;
+}
+
+.p2 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	left: 230px;
+	top: -300px;
+}
+
+.p3 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	left: 460px;
+	top: -600px;
+}
+
+.p4 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	left: 690px;
+	top: -900px;
+}
+
+.p5 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	top: -890px;
+}
+
+.p6 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	left: 230px;
+	top: -1190px;
+}
+
+.p7 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	left: 460px;
+	top: -1490px;
+}
+
+.px {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	left: 690px;
+	top: -1790px;
+}
+
+.p9 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	top: -1780px;
+}
+
+.p10 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	left: 230px;
+	top: -2080px;
+}
+
+.p11 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	left: 460px;
+	top: -2380px;
+}
+
+.p12 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	top: -2680px;
+	left: 690px;
+}

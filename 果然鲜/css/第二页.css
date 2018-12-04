@@ -1,0 +1,53 @@
+body {
+	width: 960px;
+	height: auto;
+}
+
+#a {
+	width: 960px;
+}
+
+.a1 {
+	width: 500px;
+	height: 200px;
+	margin-left: 50px;
+}
+
+.a2 {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	left: 700px;
+	top: -150px;}
+	.p1 {
+	width: 220px;
+	height: 300px;
+}
+
+.p2 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	left: 230px;
+	top: -300px;
+}
+
+.p3 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	left: 460px;
+	top: -600px;
+}
+
+.p4 {
+	width: 220px;
+	height: 300px;
+	position: relative;
+	left: 690px;
+	top: -900px;
+}
+img:hover{
+	
+	border:3px solid red
+}
